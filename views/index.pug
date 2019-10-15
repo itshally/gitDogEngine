@@ -1,0 +1,50 @@
+doctype html
+html(lang='en')
+     head
+          meta(charset='utf-8')
+          meta(name="author", content="HB, itshally, Hally")
+          title gitPUP | Home
+          //- bootstrap css
+          link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+          style
+               include style.css
+     body
+
+          //- nav links
+          ul.nav.justify-content-center
+               li.nav-item
+                    a.nav-link(href="/") Home
+               li.nav-item
+                    a.nav-link(href="/about") About                         
+               li.nav-item
+                    a.nav-link(href="/gallery") Images   
+
+          //- carousel
+          div.carousel.slide#carouselIndicators(data-ride="carousel")
+               ol.carousel-indicators
+                    li(data-target="carouselIndicators", data-slide-to="0").active
+                    li(data-target="carouselIndicators", data-slide-to="1")
+                    li(data-target="carouselIndicators", data-slide-to="2")
+               .carousel-inner
+                    .carousel-item.active
+                         img.d-block.w-100(src='./assets/images/img-0.jpg', alt='First Image')
+                         
+                    //- .carousel-item
+                    //-      img(src="./assets/images/img-1.jpg", alt="Second Slide")
+                    //- .carousel-item
+                    //-      img(src="./assets/images/img-3.jpg", alt="Third Slide")
+
+               
+
+
+          //- bootstrap js
+          script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+          script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
+          script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+
+          //- jquery 
+          script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+
+          //- custom js
+          script
+               include main.js

@@ -1,0 +1,15 @@
+body{
+     background-color: #fefefe;
+}
+.dog-images-container{
+     background-color: white;
+}
+.dog-pics{
+     height: 250px;
+     width: 250px;
+     object-fit: fill;
+     object-position: center;
+     position: relative;
+     margin: auto;
+     display: block;
+}

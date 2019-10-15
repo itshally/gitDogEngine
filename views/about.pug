@@ -1,0 +1,32 @@
+doctype doctype
+html(lang='en')
+     head
+          meta(charset='utf-8')
+          meta(name="author", content="HB, itshally, Hally")
+          title gitPUP | About
+          //- bootstrap css
+          link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+          style
+               include style.css
+     body
+          ul.nav.justify-content-center
+               li.nav-item
+                    a.nav-link(href="/") Home
+               li.nav-item
+                    a.nav-link(href="/about") About                         
+               li.nav-item
+                    a.nav-link(href="/gallery") Images    
+                    
+          h1 About Page
+
+          //- bootstrap js
+          script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+          script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
+          script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+
+          //- jquery 
+          script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+
+          //- custom js
+          script
+               include main.js
