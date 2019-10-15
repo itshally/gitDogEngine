@@ -1,6 +1,20 @@
 body{
      background-color: #fefefe;
 }
+
+/* ------------------ Home Page ------------------ */
+
+/* Carousel */
+.carousel, .slide, .carousel-inner{
+     height: 50vh;
+}
+.carousel img{
+     object-fit: contain;
+     object-position: bottom;
+}
+
+/* ----------------------------------------------- */
+
 .dog-images-container{
      background-color: white;
 }

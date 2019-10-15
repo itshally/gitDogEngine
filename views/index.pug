@@ -6,8 +6,9 @@ html(lang='en')
           title gitPUP | Home
           //- bootstrap css
           link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
-          style
-               include style.css
+          //- style
+          //-      include style.css
+          link(rel="stylesheet", href="/views/style.css")
      body
 
           //- nav links
@@ -27,12 +28,18 @@ html(lang='en')
                     li(data-target="carouselIndicators", data-slide-to="2")
                .carousel-inner
                     .carousel-item.active
-                         img.d-block.w-100(src='./assets/images/img-0.jpg', alt='First Image')
-                         
-                    //- .carousel-item
-                    //-      img(src="./assets/images/img-1.jpg", alt="Second Slide")
-                    //- .carousel-item
-                    //-      img(src="./assets/images/img-3.jpg", alt="Third Slide")
+                         img.d-block.w-100(src='/views/assets/images/img-0.jpg', alt='First Image')    
+                    .carousel-item
+                         img.d-block.w-100(src="/views/assets/images/img-1.jpg", alt="Second Slide")
+                    .carousel-item
+                         img.d-block.w-100(src="/views/assets/images/img-2.jpg", alt="Third Slide")
+               a.carousel-control-prev(href="#carouselIndicators", role="button", data-slide="prev")
+                    span.carousel-control-prev-icon(aria-hidden="true")
+                    span.sr-only Previous
+               a.carousel-control-next(href="#carouselIndicators", role="button", data-slide="next")
+                    span.carousel-control-next-icon(aria-hidden="true")
+                    span.sr-only Next
+               
 
                
 
@@ -46,5 +53,6 @@ html(lang='en')
           script(src="https://code.jquery.com/jquery-3.4.1.min.js")
 
           //- custom js
-          script
-               include main.js
+          //- script
+          //-      include main.js
+          script(src="/views/main.js")
