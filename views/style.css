@@ -1,19 +1,96 @@
 body{
-     background-color: #fefefe;
+     padding: 0;
+     margin: 0;
+}
+/* Navbar */
+.nav{
+     position: relative;
+     padding: 1rem;
+}
+.navbar-nav{
+     margin: auto 0 auto auto;
+}
+.navbar-collapse .nav-item{
+     margin: 0 0.5rem;
 }
 
 /* ------------------ Home Page ------------------ */
 
 /* Carousel */
-.carousel, .slide, .carousel-inner{
+.carousel-container{
      height: 50vh;
+     width: 100%;
+     padding: 0;
+     margin: 0; 
+     overflow: hidden;
+     position: relative;
 }
-.carousel img{
-     object-fit: contain;
-     object-position: bottom;
+.carousel{
+     height: 100%;
+     margin: 0;
+     padding: 0;
+}
+.carousel-inner, .carousel-item{
+     height: 100%;
+     padding: 0;
+     margin: 0;
+}
+.carousel-inner .carousel-item img{
+     height: 100%;
+     width: 100%;
+     object-position: center;
+     object-fit: cover;
+}
+.carousel-bg{
+     background-color: #c6b9c0;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     z-index: 1;
+     opacity: 0.4;
+     overflow: hidden;
+}
+.carousel-container h1{
+     color: white;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 2;
+     text-shadow: 1px 1px black;
 }
 
 /* ----------------------------------------------- */
+
+
+/* ------------------ About Page ------------------ */
+.about-header-container{
+     position: relative;
+     height: auto;
+     width: 100%;
+     background: #fbe4dc;
+     padding: 0;
+     margin: 0;
+}
+.about-header-container .row{
+     margin: auto;
+     height: 100%;
+     width: 90%;
+     position: relative;
+}
+.about-header-container .col-12,
+.about-header-container .col-md-6{
+     position: relative;
+}
+.about-text{
+     padding: 3.5rem;
+}
+#dog-0{
+     height: 20rem;
+     width: auto;
+     float: right;
+}
+/* ------------------ Gallery Page ------------------ */
 
 .dog-images-container{
      background-color: white;
