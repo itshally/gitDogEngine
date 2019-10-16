@@ -2,6 +2,7 @@ doctype html
 html(lang='en')
      head
           meta(charset='utf-8')
+          meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
           meta(name="author", content="HB, itshally, Hally")
           title gitDog | About
           //- bootstrap css
@@ -27,7 +28,7 @@ html(lang='en')
 
           .container-fluid.about-header-container 
                .row
-                    .col-12.col-lg-6.align-self-center.about-text
+                    .col-12.col-md-12.col-lg-6.align-self-center.about-text
                          h1 About Page
                          p 
                               | Vestibulum a mattis est. Nullam eget vulputate erat, a mollis dolor. 
@@ -37,8 +38,35 @@ html(lang='en')
                               | Suspendisse potenti. Suspendisse eu metus velit. Fusce at posuere arcu. Suspendisse 
                               | in elit quis diam rhoncus tristique vel in augue. Integer laoreet fringilla vulputate. 
                               | Integer commodo luctus fringilla.
-                    .col-12.col-lg-6.align-self-end
+                    .col-12.col-md-12.col-lg-6.align-self-end
                          img#dog-0(src="/views/assets/images/dog-0.png", alt="")
+
+          .container.about-details
+               .row
+                    .col-12.col-md-4.col-lg-4
+                         .card.text-center
+                              .card-body
+                                   h5.card-title <i class="fas fa-paw"></i>
+                                   p.card-text
+                                        | Duis consectetur ullamcorper lacinia. Ut lacinia est sem, 
+                                        | sit amet ultrices magna porttitor sit amet. Class aptent 
+                                        | taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    .col-12.col-md-4.col-lg-4
+                         .card.text-center
+                              .card-body
+                                   h5.card-title <i class="fas fa-bone"></i>
+                                   p.card-text
+                                        | Fusce vulputate turpis sem, quis ultricies purus tincidunt varius. 
+                                        | Vivamus placerat leo non sapien gravida pulvinar. Nulla blandit 
+                                        | placerat ligula, a viverra mauris ullamcorper eu.
+                    .col-12.col-md-4.col-lg-4
+                         .card.text-center
+                              .card-body
+                                   h5.card-title <i class="fas fa-heart"></i>   
+                                   p.card-text
+                                        | Duis vitae imperdiet urna. Sed placerat lacinia lacus. Nunc sed 
+                                        | tellus facilisis, scelerisque lorem nec, venenatis nisl. Donec a 
+                                        | lorem id magna efficitur finibus. 
 
           //- bootstrap js
           script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
