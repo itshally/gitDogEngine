@@ -58,14 +58,35 @@ html, body{
      transform: translate(-50%, -50%);
      z-index: 2;
      text-shadow: 1px 1px black;
-     /* font-size: 24pt; */
      text-align: center;
 }
-
-/* ----------------------------------------------- */
+/* Breeds Container */
+.breeds-container{
+     padding: 5rem 2rem;
+     text-align: center;
+}
+.breeds-container .row{
+     width: 90%;
+     margin: auto;
+}
+.dog-breed{
+     /* background-color: royalblue; */
+     text-align: center;
+     margin: 1rem auto;
+     padding: 2rem;
+     border-radius: 5px;
+     box-shadow: 0px 0px 10px -5px black;
+     width: auto;
+     text-transform: capitalize;
+}
+.dog-breed:hover{
+     transform: scale(1.05);
+     border: 1px solid black;
+}
 
 
 /* ------------------ About Page ------------------ */
+/* About Header */
 .about-header-container{
      position: relative;
      height: auto;
@@ -89,17 +110,17 @@ html, body{
      padding: 3.5rem 0;
 }
 #dog-0{
-     /* float: right; */
      position: relative;
      z-index: 3;
      right: -25%;
-     /* transform: translateX(-50%); */
      bottom: 0;
 }
 .about-header-container .col-lg-6 #dog-0{
      height: 95%;
      width: 85%;
 }
+
+/* About Details */
 .about-details{
      padding: 5rem 0;
      height: 50%;
@@ -111,7 +132,7 @@ html, body{
      position: relative;
 }
 .about-details .card{
-     border-radius: 15px;
+     border-radius: 5px;
      height: 200px;
      position: relative;
      box-shadow: 0px 0px 10px -5px black;
@@ -136,7 +157,6 @@ html, body{
      left: 50%;
      transform: translate(-50%, 50%);
 }
-
 
 /* ------------------ Gallery Page ------------------ */
 
