@@ -18,6 +18,9 @@ $(document).ready(() => {
                     $('#' + dogbreeds[i]).css('color', 'red');
                }else{
                     console.log(dogbreeds[i] + ' has a sub-degree')
+                    $('#' + dogbreeds[i]).append(`
+                         <span class="badge badge-primary badge-pill">${result.message[dogbreeds[i]].length}</span>
+                    `).attr('title', 'View Sub-Breeds');
                }
           }
 

@@ -78,13 +78,13 @@ html, body{
      width: auto;
      text-transform: capitalize;
      border: 1px solid black;
+     position: relative;
 }
 .dog-breed:hover{
      transform: scale(1.05);
      border: 1px solid black;
      box-shadow: 0px 0px 15px -5px black;
 }
-
 
 /* ------------------ About Page ------------------ */
 /* About Header */
