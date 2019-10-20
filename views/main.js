@@ -18,9 +18,26 @@ $(document).ready(() => {
                     $('#' + dogbreeds[i]).css('color', 'red');
                }else{
                     console.log(dogbreeds[i] + ' has a sub-degree')
+                    $('#' + dogbreeds[i]).addClass('hover-effect');
                     $('#' + dogbreeds[i]).append(`
                          <span class="badge badge-primary badge-pill">${result.message[dogbreeds[i]].length}</span>
-                    `).attr('title', 'View Sub-Breeds');
+                    `).attr({
+                         title: 'View Sub-Breeds',
+                         'data-toggle': 'modal',
+                         'data-target': '#breedModal'
+                    }).on('click', (e) => {
+                         //resets the modal-body
+                         $('.modal-body').html('');
+                         
+                         //displays the breed name
+                         $('.modal-title').text(dogbreeds[i]);
+                         for(let b in result.message[dogbreeds[i]]){
+                              $('.modal-body').append(`
+                                   <p>${result.message[dogbreeds[i]][b]}</p>
+                              `);
+                         }
+                    });
+                    
                }
           }
 

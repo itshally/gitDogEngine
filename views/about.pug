@@ -67,6 +67,21 @@ html(lang='en')
                                         | Duis vitae imperdiet urna. Sed placerat lacinia lacus. Nunc sed 
                                         | tellus facilisis, scelerisque lorem nec, venenatis nisl. Donec a 
                                         | lorem id magna efficitur finibus. 
+          .container-fluid.breeds-container
+               h1 Different Types of Breed
+               .row
+                    //- breeds will appear below
+               
+               //- modal; hide by default
+               .modal.fade#breedModal(tabindex='-1', role="dialog", aria-lebelledby="breedModalTitle", aria-hidden="true")
+                    .modal-dialog.modal-dialog-center(role="document")
+                         .modal-content
+                              .modal-header
+                                   h5.modal-title#breedModalTitle
+                              .modal-body
+                              .modal-footer
+                                   button.btn.btn-secondary(type="button", data-dismiss="modal") Close
+
 
           //- bootstrap js
           script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")

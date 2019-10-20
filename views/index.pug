@@ -14,7 +14,7 @@ html(lang='en')
      body
 
           //- navbar links
-          nav.navbar.navbar-expand-lg.navbar-light.bg-light
+          nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
                a.navbar-brand gitDog <i class="fas fa-dog"></i>
                button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav" aria-expanded="false", aria-label="Toggle navigation")
                     span.navbar-toggler-icon
@@ -29,8 +29,13 @@ html(lang='en')
              
           //- carousel
           div.container-fluid.carousel-container
-               div.carousel-bg
-               h1.h1 Welcome to gitDog <i class="fas fa-dog"></i>
+               .carousel-bg
+               .carousel-text
+                    h1.h1 Welcome to gitDog <i class="fas fa-dog"></i>
+                    p
+                         | Aenean a mollis dolor. Nunc commodo felis felis, 
+                         | a scelerisque dolor venenatis a. Mauris elit ex, 
+                         | pulvinar sed ipsum in, rhoncus tincidunt enim
                     
                div.carousel.slide#carouselIndicators(data-ride="carousel")
                     ol.carousel-indicators
@@ -39,24 +44,22 @@ html(lang='en')
                          li(data-target="carouselIndicators", data-slide-to="2")
                     .carousel-inner
                          .carousel-item.active
-                              img(src='/views/assets/images/img-0.jpg', alt='First Image')    
+                              img.d-block.w-100(src='/views/assets/images/img-0.jpg', alt='First Image')    
                          .carousel-item
-                              img(src="/views/assets/images/img-1.jpg", alt="Second Slide")
+                              img.d-block.w-100(src="/views/assets/images/img-1.jpg", alt="Second Slide")
                          .carousel-item
-                              img(src="/views/assets/images/img-2.jpg", alt="Third Slide")
+                              img.d-block.w-100(src="/views/assets/images/img-2.jpg", alt="Third Slide")
                     a.carousel-control-prev(href="#carouselIndicators", role="button", data-slide="prev")
                          span.carousel-control-prev-icon(aria-hidden="true")
                          span.sr-only Previous
                     a.carousel-control-next(href="#carouselIndicators", role="button", data-slide="next")
                          span.carousel-control-next-icon(aria-hidden="true")
                          span.sr-only Next
-                    
-          .container-fluid.breeds-container
-               h1 Different Types of Breed
-               .row
-                    //- breeds will appear below
-               
-
+          
+          //- footer
+          div.container-fluid.footer-container
+               .container.footer-content
+                    span &copy; 2019 Hally. All Rights Reserved.
           //- bootstrap js
           script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
           script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
