@@ -9,35 +9,37 @@ $(document).ready(() => {
           for(let i in dogbreeds){
                $('.breeds-container .row').append(
                     `<div class="col-12 col-md-3 col-lg-2">
-                         <p class="dog-breed" id="${dogbreeds[i]}">${dogbreeds[i]}</p>
+                         <div class="dropdown">
+                              <button id="${dogbreeds[i]}" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              ${dogbreeds[i]}
+                              </button>
+                              <div class="dropdown-menu ${dogbreeds[i]}" aria-labelledby="dropdownMenuButton">
+                                   <!-- <a class="dropdown-item" href="#">Action</a> -->
+                              </div>
+                         </div>
                     </div>`
                );     
 
                if(result.message[dogbreeds[i]].length == 0){
                     console.log(dogbreeds[i] + " has no sub-degree")
-                    $('#' + dogbreeds[i]).css('color', 'red');
+                    // $('#' + dogbreeds[i]).css('color', 'red');
+                    $('#' + dogbreeds[i]).addClass('disabled-dropdown');
+                    $('.disabled-dropdown').removeAttr('data-toggle');
+
                }else{
                     console.log(dogbreeds[i] + ' has a sub-degree')
-                    $('#' + dogbreeds[i]).addClass('hover-effect');
+                    // $('#' + dogbreeds[i]).addClass('hover-effect');
                     $('#' + dogbreeds[i]).append(`
                          <span class="badge badge-primary badge-pill">${result.message[dogbreeds[i]].length}</span>
                     `).attr({
-                         title: 'View Sub-Breeds',
-                         'data-toggle': 'modal',
-                         'data-target': '#breedModal'
-                    }).on('click', (e) => {
-                         //resets the modal-body
-                         $('.modal-body').html('');
-                         
-                         //displays the breed name
-                         $('.modal-title').text(dogbreeds[i]);
-                         for(let b in result.message[dogbreeds[i]]){
-                              $('.modal-body').append(`
-                                   <p>${result.message[dogbreeds[i]][b]}</p>
-                              `);
-                         }
+                         title: 'View Sub-Breeds'
                     });
                     
+                    for(let b in result.message[dogbreeds[i]]){
+                         $('.' + dogbreeds[i]).append(`
+                              <span class="dropdown-item" href="#">${result.message[dogbreeds[i]][b]}</span>
+                         `);
+                    }
                }
           }
 
