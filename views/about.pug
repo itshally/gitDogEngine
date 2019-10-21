@@ -38,8 +38,15 @@ html(lang='en')
                               | Suspendisse potenti. Suspendisse eu metus velit. Fusce at posuere arcu. Suspendisse 
                               | in elit quis diam rhoncus tristique vel in augue. Integer laoreet fringilla vulputate. 
                               | Integer commodo luctus fringilla.
+                         p
+                              | Nulla lobortis elementum lectus, id dictum justo eleifend eu. Morbi vitae purus mauris. 
+                              | Proin nec purus placerat, blandit massa et, luctus sem. Maecenas varius fermentum malesuada. 
+                              | Mauris tempus maximus vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                              | Sed fringilla ipsum vel ipsum iaculis luctus. Cras faucibus leo suscipit, iaculis ante ac, 
+                              | ultricies libero. Ut pretium, ligula id dictum hendrerit, erat ligula sollicitudin velit, et 
+                              | scelerisque lacus magna in libero. Proin in ante in arcu rhoncus eleifend pellentesque et dui.
                     .col-12.col-md-12.col-lg-6.align-self-end
-                         img#dog-0(src="/views/assets/images/dog-0.png", alt="")
+                         img#dog-0(src="/views/assets/images/dog-0.png", alt="Dog Photo")
 
           .container.about-details
                .row
@@ -68,8 +75,24 @@ html(lang='en')
                                         | tellus facilisis, scelerisque lorem nec, venenatis nisl. Donec a 
                                         | lorem id magna efficitur finibus. 
           .container-fluid.breeds-container
-               h1 Different Types of Breed
-               .row
+               .container-fluid.breeds-description
+                    .row.align-items-center
+                         .col-12.col-md-6.col-lg-3
+                                   img#dog-1(src="/views/assets/images/dog-1.png", alt="Dog Photo")
+                         .col-12.col-md-6.col-lg-6
+                              p 
+                                   h1 Different Types of Breed
+                                   | Aenean tristique et leo in sollicitudin. Phasellus euismod leo bibendum risus 
+                                   | ultricies bibendum. Donec vel tincidunt massa. Nullam hendrerit, erat fermentum 
+                                   | pretium condimentum, ex ipsum interdum orci, non finibus turpis mi a magna. Vivamus 
+                                   | quam justo, fringilla sed urna quis, ultrices dapibus leo. Morbi ac ullamcorper leo. 
+                                   | In hac habitasse platea dictumst. Suspendisse eget ex vel sem tempus ultrices. Morbi 
+                                   | laoreet nunc sed nisl pretium venenatis. Suspendisse fringilla faucibus condimentum. 
+                                   | Nullam massa nibh, porttitor pretium rhoncus et, venenatis sed nisl. Donec sed ultricies 
+                                   | risus. Sed congue nisi condimentum sem consequat, vitae pretium lacus malesuada. Lorem 
+                                   | ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit tristique augue, vel 
+                                   | convallis magna placerat id. Suspendisse potenti.
+               .row.breeds-list-row
                     //- breeds will appear below
                
 
@@ -77,7 +100,7 @@ html(lang='en')
           div.container-fluid.footer-container
                .container.footer-content
                     span &copy; 2019 Hally. All Rights Reserved.
-                    
+
           //- bootstrap js
           script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
           script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")

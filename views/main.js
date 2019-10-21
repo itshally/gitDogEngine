@@ -7,7 +7,7 @@ $(document).ready(() => {
           let dogbreeds = Object.keys(result.message);
           // Displaying all breeds in the home page
           for(let i in dogbreeds){
-               $('.breeds-container .row').append(
+               $('.breeds-container .breeds-list-row').append(
                     `<div class="col-12 col-md-3 col-lg-2">
                          <div class="dropdown">
                               <button id="${dogbreeds[i]}" class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
