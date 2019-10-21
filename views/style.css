@@ -59,27 +59,13 @@ html, body{
 .carousel-text p{
      font-size: 15pt;
 }
-.footer-container{
-     padding: 0;
-     margin: 0;
-     position: relative;
-     height: 5%;
-}
-.footer-content{
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     z-index: 3;
-     text-align: center;
-}
 /* ------------------ About Page ------------------ */
 /* About Header */
 .about-header-container{
      position: relative;
      height: auto;
      width: 100%;
-     background: #fbe4dc;
+     background: #CEDEF4;
      padding: 0;
      margin: 0;
 }
@@ -100,7 +86,7 @@ html, body{
 #dog-0{
      position: relative;
      z-index: 3;
-     right: -25%;
+     right: -20%;
      bottom: 0;
 }
 .about-header-container .col-lg-6 #dog-0{
@@ -130,7 +116,7 @@ html, body{
 .about-details .card-title{
      font-size: 32pt;
      padding: 1.5rem;
-     background-color: #eacdd0;
+     background-color: #7BA7E1;
      border-radius: 50%;
      position: absolute;
      top: -22.5%;
@@ -155,23 +141,28 @@ html, body{
      width: 90%;
      margin: auto;
 }
-.dog-breed{
-     /* background-color: royalblue; */
-     /* border-radius: 5px; */
-     width: auto;
+.btn{
+     background-color: #E0EAF8;
+     padding: 1rem;
      text-transform: capitalize;
-     /* border: 1px solid black; */
-     position: relative;
+     margin: auto;
 }
 .dropdown button{
      width: 100%;
-     margin: 1rem;
+     margin: 1rem auto;
+}
+.dropdown-menu{
+     width: 100%;
 }
 .disabled-dropdown:focus{
      outline: none;
 }
 .disabled-dropdown::after{
      display: none;
+}
+.badge-pill{
+     background-color: #7BA7E1;
+     color: #E0EAF8;
 }
 /* ------------------ Gallery Page ------------------ */
 
@@ -186,4 +177,22 @@ html, body{
      position: relative;
      margin: auto;
      display: block;
+}
+
+/* Footer */
+.footer-container{
+     padding: 0;
+     margin: 0;
+     position: relative;
+     height: 5%;
+     background-color: #8EB4E6;
+     color: #E0EAF8;
+}
+.footer-content{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 3;
+     text-align: center;
 }

@@ -10,11 +10,10 @@ $(document).ready(() => {
                $('.breeds-container .row').append(
                     `<div class="col-12 col-md-3 col-lg-2">
                          <div class="dropdown">
-                              <button id="${dogbreeds[i]}" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <button id="${dogbreeds[i]}" class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               ${dogbreeds[i]}
                               </button>
                               <div class="dropdown-menu ${dogbreeds[i]}" aria-labelledby="dropdownMenuButton">
-                                   <!-- <a class="dropdown-item" href="#">Action</a> -->
                               </div>
                          </div>
                     </div>`
@@ -30,7 +29,7 @@ $(document).ready(() => {
                     console.log(dogbreeds[i] + ' has a sub-degree')
                     // $('#' + dogbreeds[i]).addClass('hover-effect');
                     $('#' + dogbreeds[i]).append(`
-                         <span class="badge badge-primary badge-pill">${result.message[dogbreeds[i]].length}</span>
+                         <span class="badge badge-pill">${result.message[dogbreeds[i]].length}</span>
                     `).attr({
                          title: 'View Sub-Breeds'
                     });
