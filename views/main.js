@@ -41,30 +41,6 @@ $(document).ready(() => {
                     }
                }
           }
-
-          	//getting the sub-breed
-		// 	  $('.dog-breed').on('click', (e) => {
-          //           e.preventDefault();
-                    
-          //           let breed = e.target.textContent;
-          //           console.log(e.target.textContent)
-                    
-          //           $.get(`https://dog.ceo/api/breed/${breed}/list`)
-          //           .then((result) => {
-          //                console.log(result)
-
-          //                if(result.message.length == 0){
-          //                     console.log('no sub-breed available')
-          //                }
-          //                else{
-          //                     console.log('there is available')
-          //                }
-                              
-          //           })
-          //           .catch( (error) => {
-          //                console.log(error);
-          //           })
-          //     });
       })
       .catch( (error) => {
           console.log(error)

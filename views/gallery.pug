@@ -25,17 +25,21 @@ html(lang='en')
                          li.nav-item
                               a.nav-link(href="/gallery") Gallery
 
-          h1 Gallery Page
-
-          .container-fluid                       
-               h1 Dog Breeds
+          .container.dropdown-list
+               h1 Search Dog Images by Breed
                select.form-control.form-control-lg
-               button(type='submit' id='submit-btn') Submit
+               button.btn.btn-primary(type='submit' id='submit-btn') Generate Photo
 
-               .container.dog-images-container
-                    .row
+          
+          .container.dog-images-container
+               .row
                     //- images of dogs will display below
 
+          //- footer
+          div.container-fluid.footer-container
+               .container.footer-content
+                    span &copy; 2019 Hally. All Rights Reserved.
+                    
           //- bootstrap js
           script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
           script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
