@@ -5,7 +5,7 @@ $(document).ready(() => {
       .then((result) => {
 
           let dogbreeds = Object.keys(result.message);
-          // Displaying all breeds in the home page
+          // Displaying all breeds in the about page
           for(let i in dogbreeds){
                $('.breeds-container .breeds-list-row').append(
                     `<div class="col-12 col-md-3 col-lg-2">
@@ -53,7 +53,7 @@ $(document).ready(() => {
 
           for(let x in dogbreeds){
                let breed = getDogBreed(dogbreeds[x])
-               //Displaying all breeds in the gallery's dropdown page
+               //Displaying all breeds in the dropdown of the gallery page 
                $('.form-control').append(breed);
           }
       })
