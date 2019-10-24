@@ -20,14 +20,10 @@ $(document).ready(() => {
                );     
 
                if(result.message[dogbreeds[i]].length == 0){
-                    console.log(dogbreeds[i] + " has no sub-degree")
-                    // $('#' + dogbreeds[i]).css('color', 'red');
                     $('#' + dogbreeds[i]).addClass('disabled-dropdown');
                     $('.disabled-dropdown').removeAttr('data-toggle');
 
                }else{
-                    console.log(dogbreeds[i] + ' has a sub-degree')
-                    // $('#' + dogbreeds[i]).addClass('hover-effect');
                     $('#' + dogbreeds[i]).append(`
                          <span class="badge badge-pill">${result.message[dogbreeds[i]].length}</span>
                     `).attr({
@@ -65,12 +61,10 @@ $(document).ready(() => {
      $('#submit-btn').on('click', (e) => {
           var x = $('.form-control').val();
           $('.row').empty();
-          console.log(x)
           $.get(`https://dog.ceo/api/breed/${x}/images/random/12`)
           .then((result) => {
                var imgURL = result.message;
 
-               console.log(result.message)
                for(var x in imgURL){
                     var img = displayDogImages(imgURL[x]);
                     $('.row').append(img);
