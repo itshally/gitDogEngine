@@ -10,13 +10,22 @@ html, body{
      padding: 1rem;
      z-index: 1;
 }
+.bg-light{
+     background-color: #6094DB !important;
+     color: #CEDEF4;
+}
 .navbar-nav{
      margin: auto 0 auto auto;
 }
 .navbar-collapse .nav-item{
      margin: 0 0.5rem;
 }
-
+.navbar-nav a{
+     color: #CEDEF4 !important;
+}
+.navbar-nav a:active{
+     color: red !important;
+}
 /* ------------------ Home Page ------------------ */
 
 /* Carousel */
@@ -27,7 +36,6 @@ html, body{
      margin: 0; 
      overflow: hidden;
      position: relative;
-     background-color: red;
      z-index: 1;
 }
 .carousel{
@@ -185,14 +193,32 @@ html, body{
 
 .dropdown-list{
      padding: 4rem 2rem 1rem 2rem;
+     height: 95%;
+     width: 100%;
+     overflow: auto;
+}
+.dropdown-list h1{
+     text-align: center;
+}
+.dropdown-list .form-control{
+     text-transform: capitalize;
+}
+.dropdown-list .btn{
+     background-color: #7BA7E1;
+     outline: none;
+     border: none;
+     padding: 0.5rem 1rem;
+     margin: 1rem auto;
+     display: block;
 }
 .dog-images-container{
      overflow: inherit;
      height: auto;
+     width: auto;
 }
 .dog-pics{
-     height: 300px;
-     width: 300px;
+     height: 275px;
+     width: 275px;
      object-fit: cover;
      object-position: center;
      position: relative;
