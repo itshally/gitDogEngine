@@ -23,6 +23,10 @@ html, body{
 .navbar-nav a{
      color: #CEDEF4 !important;
 }
+.navbar-nav a:hover{
+     text-shadow: 0 0 2.5px rgb(125, 178, 253);
+     transform: scale(1.1);
+}
 /* ------------------ Home Page ------------------ */
 
 /* Carousel */
