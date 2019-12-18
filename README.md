@@ -44,7 +44,8 @@ gitDogEngine
 - Heroku
 - pug
 - [Dog API](https://dog.ceo/dog-api/)
-- 
+
+
 ## Install
 To clone this project to your device, type the `code` below to your git bash:
 ```bash
