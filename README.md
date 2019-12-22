@@ -85,4 +85,4 @@ Here is an available screenshot:
 Click this [live preview](https://gitdog-engine.herokuapp.com/) to see this page.
 
 ## Author
-[@itshally](https://github.com/itshally) 
+[Hally](https://github.com/itshally) 
